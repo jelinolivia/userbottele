@@ -34,7 +34,7 @@ class GameFiConversationEngine:
     
     # Starter topics yang varied
     STARTER_TOPICS = [
-        "gue lagi research {game} nih, ada yang main juga?",
+        "Kalian ada yang coba game run sheep ga sih ?",
         "floor price {token} pump {percent}% guys",
         "baru denger {game} partnership sama {brand}",
         "gas fee {chain} murah banget sekarang",
@@ -44,7 +44,7 @@ class GameFiConversationEngine:
         "whales lagi accumulate {token} kayaknya",
         "gue baru flip NFT profit lumayan tadi",
         "{chain} integrate {game} baru aja diannounce",
-        "market lagi sideways ya, strategy kalian gimana?",
+        "market lagi sideways ya, strategy apa aja pasti susah sih",
         "ada news terbaru soal {game}?",
         "grinding {game} masih profitable ga?",
         "tokenomics {token} sustainable menurut kalian?",
