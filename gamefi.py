@@ -31,51 +31,7 @@ API_HASH = None
                 await asyncio.sleep(random.uniform(1, 5))
                 await event.respond(random.choice(reply_options))
                 break
-    
-    # Data real GameFi 2025
-    REAL_DATA = {
-        "games": ["Axie Infinity", "Illuvium", "Big Time", "Off The Grid", "Pixels",
-                  "Heroes of Mavia", "Gods Unchained", "Star Atlas", "Gala Games", 
-                  "Artyfact", "Guild of Guardians", "Splinterlands"],
-        "chains": ["Ronin", "Polygon", "Immutable X", "Immutable zkEVM", "Arbitrum Nova",
-                   "Solana", "BNB Chain", "Sui", "Beam", "Flow"],
-        "tokens": ["AXS", "RON", "IMX", "ILV", "BIGTIME", "SAND", "MANA", "GALA",
-                   "PIXEL", "MAVIA", "GODS", "ATLAS", "BEAM"],
-    }
-    
-    # Starter topics yang varied
-    STARTER_TOPICS = [
-        "Kalian ada yang coba game run sheep ga sih ?",
-        "floor price {token} pump {percent}% guys",
-        "baru denger {game} partnership sama {brand}",
-        "gas fee {chain} murah banget sekarang",
-        "{game} update kemarin gimana reviewnya?",
-        "ada yang ikutan tournament {game} minggu ini?",
-        "ROI {game} masih worth ga ya di 2025?",
-        "whales lagi accumulate {token} kayaknya",
-        "gue baru flip NFT profit lumayan tadi",
-        "{chain} integrate {game} baru aja diannounce",
-        "market lagi sideways ya, strategy apa aja pasti susah sih",
-        "ada news terbaru soal {game}?",
-        "grinding {game} masih profitable ga?",
-        "tokenomics {token} sustainable menurut kalian?",
-        "meta {game} berubah sejak patch terakhir",
-    ]
-    
-    # Off-topic casual (10% chance)
-    OFF_TOPICS = [
-        "btw ada yang nonton event gaming kemarin?",
-        "wkwk lag parah internet gue tadi",
-        "udah makan siang belom guys?",
-        "capek juga grinding seharian",
-        "ada rekomendasi game baru ga?",
-        "market crypto lagi gimana nih?",
-        "weekend rencana main apa?",
-        "gue butuh break dulu kayaknya haha",
-        "ada yang tau group discord bagus?",
-        "lagi males login game hari ini",
-    ]
-    
+              
     @staticmethod
     def fill_template(text):
         """Fill dengan data random"""
