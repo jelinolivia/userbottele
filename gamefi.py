@@ -18,20 +18,19 @@ CONFIG_FILE = 'userbot_config.json'
 API_ID = None
 API_HASH = None
 
-class GameFiConversationEngine:
-  responses = {
-    'tokenomics': ["Wah, tokenomics ini cerdas banget ya!", "Tokenomics oke nih, sustainable lagi!", "Keren, mau dalami tokenomics-nya bro!"],
-    'nft': ["NFT lagi rame ya, lo punya yang bagus?", "Wah, NFT-nya kece, aku pengen koleksi!", "Nice, NFT ini bisa untung gede!"],
-    'floor price': ["Floor price naik nih, seru banget!", "Wah, floor price lagi hot, kapan ikut?", "Keren, floor price-nya mantap!"]
-}
+  class GameFiConversationEngine:
+    responses = {
+        'tokenomics': ["Wah, tokenomics ini cerdas banget ya!", "Tokenomics oke nih!"],
+        'nft': ["NFT lagi rame ya, lo punya yang bagus?", "Wah, NFT-nya kece!"]
+    }
 
-async def respond(self, event):
-    text = event.text.lower()
-    for keyword, reply_options in responses.items():
-        if keyword in text:
-            await asyncio.sleep(random.uniform(1, 5))  # Delay natural
-            await event.respond(random.choice(reply_options))
-            break
+    async def respond(self, event):
+        text = event.text.lower()
+        for keyword, reply_options in self.responses.items():
+            if keyword in text:
+                await asyncio.sleep(random.uniform(1, 5))
+                await event.respond(random.choice(reply_options))
+                break
     
     # Data real GameFi 2025
     REAL_DATA = {
